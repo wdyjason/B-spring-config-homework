@@ -8,7 +8,7 @@ import org.springframework.test.context.TestPropertySource;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-@TestPropertySource(properties = {"levelNumber=3"})
+@TestPropertySource(locations = "classpath:application.properties")
 class LevelControllerTest {
 
     @Autowired
